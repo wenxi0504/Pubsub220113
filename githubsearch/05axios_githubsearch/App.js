@@ -1,0 +1,21 @@
+import React, { Component } from 'react'
+import Search from './Components/search';
+import List from './Components/List'
+export default class App extends Component {
+ 
+ 
+
+  render() {
+    return (
+      <div className="container">
+        {/* saveUsers={this.saveUsers} */}
+     <Search/>  
+      <List />
+    </div>
+
+    )
+  }
+}
+
+
+
