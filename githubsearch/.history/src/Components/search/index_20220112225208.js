@@ -27,17 +27,14 @@ export default class Search extends Component {
   
     search=()=>{
       const {keyWordElement:{value:keyWord}}=this
-      //update app state before sending request
       this.props.updateAppState({isFirst:false,isLoading:true})
 
       axios.get(`https://localhost:5000/search/users?q=${keyWord}`).then(
                 response=>{
                   //console.log('successful',response.data);
-                  //notice app to update state after the request successfully 
-                  this.props.updateAppState({isLoading:false,users:response.data.items})
+                  this.props.saveUsers(response.data.items)
               },
-              error=>{
-              this.props.updateAppState({isLoading:false,err:error.message})}
+                error=>{console.log('failed',error);}
             )
 
     }

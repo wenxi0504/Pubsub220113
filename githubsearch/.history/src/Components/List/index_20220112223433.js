@@ -6,7 +6,7 @@ export default class List extends Component {
       <div className="row">
         {this.props.users.map((userObj) => {
           return (
-            <div key={userObj.id}className="card">
+            <div className="card">
               <a
                 rel="noreferrer"
                 href={userObj.html_url}

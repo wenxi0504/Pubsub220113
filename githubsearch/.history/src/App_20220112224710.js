@@ -29,7 +29,7 @@ export default class App extends Component {
       <div className="container">
         {/* saveUsers={this.saveUsers} */}
      <Search updateAppState={this.updateAppState} />  
-      <List {...this.state}/>
+      <List users={this.state.users}/>
     </div>
 
     )

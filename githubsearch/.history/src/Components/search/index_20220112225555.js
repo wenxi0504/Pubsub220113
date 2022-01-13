@@ -36,8 +36,7 @@ export default class Search extends Component {
                   //notice app to update state after the request successfully 
                   this.props.updateAppState({isLoading:false,users:response.data.items})
               },
-              error=>{
-              this.props.updateAppState({isLoading:false,err:error.message})}
+              this.props.updateAppState({isLoading:false,err:"error"})
             )
 
     }
