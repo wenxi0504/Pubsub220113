@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import axios from 'axios'
 
 export default class Search extends Component {
     search=  () => {
@@ -13,13 +12,7 @@ export default class Search extends Component {
         console.log(value)
         //  const{keyWordElement:{value:keyword}}=this
        // console.log(keyword)
-
         // step2:send web request
-        //https://api.github.com/search/users?q=${value}
-        axios.get(`https://localhost:5000/search/users?q=${value}`).then(
-            response=>{console.log('successful',response.data);},
-            error=>{console.log('failed',error);}
-        )
     }
   
 

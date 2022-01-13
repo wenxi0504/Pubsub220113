@@ -15,8 +15,7 @@ export default class Search extends Component {
        // console.log(keyword)
 
         // step2:send web request
-        //https://api.github.com/search/users?q=${value}
-        axios.get(`https://localhost:5000/search/users?q=${value}`).then(
+        axios.get(`https://api.github.com/search/users?q=${value}`).then(
             response=>{console.log('successful',response.data);},
             error=>{console.log('failed',error);}
         )
