@@ -80,25 +80,8 @@ export default class Search extends Component {
       error=>console.log('request error',error)
     )
   
+  
   };
-
-  //optimized version
-  // search = async()=>{
-  //   try{
-  //   const response = await fetch('')
-  //   const data=await response.json()
-  //   PubSub.publish("atguigu", {
-  //           isLoading: false,
-  //           users: response.data.items,
-  //         });
-  //   console.log(data);}
-  //   catch(error){
-  //     console.log('request',error)
-  //     PubSub.publish("atguigu", { isLoading: false, err: error.message });
-  //   }
-  //   }
- 
- 
 
   render() {
     return (

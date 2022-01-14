@@ -63,42 +63,18 @@ export default class Search extends Component {
     //   }
     // );
     
-    // send internet request --by fetch send(un-optimize)
+    // send internet request --by fetch send
     fetch(`https://localhost:5000/search/users?q=${keyWord}`).then
     (
-      response=>{console.log('successfully connect to server');
-      return response.json(); //r.j is a instance object of promise
-    },
-    //   error=>{console.log('failed',error);
-    //   return new Promise(()=>{})
-    // }
-    ).then(
-      response=>{console.log('receive data successfully',response);},
-      // error=>{console.log('receive data failed',error)}
+      response=>{console.log('successful',response);},
+      error=>{console.log('failed',error);}
 
-    ).catch(
-      error=>console.log('request error',error)
+
+
     )
   
+  
   };
-
-  //optimized version
-  // search = async()=>{
-  //   try{
-  //   const response = await fetch('')
-  //   const data=await response.json()
-  //   PubSub.publish("atguigu", {
-  //           isLoading: false,
-  //           users: response.data.items,
-  //         });
-  //   console.log(data);}
-  //   catch(error){
-  //     console.log('request',error)
-  //     PubSub.publish("atguigu", { isLoading: false, err: error.message });
-  //   }
-  //   }
- 
- 
 
   render() {
     return (
