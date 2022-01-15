@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import{Route,Routes}from'react-router-dom'
+import{NavLink,Route,Routes}from'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Header from './components/Header'
@@ -35,9 +35,13 @@ export default class App extends Component {
               <div className="panel-body">
                 {/* Register route */}
           <Routes>
-                <Route path="/about" element={<About/>}/>
-                <Route path="/home" element={<Home/>}/>
+                <Route path="/about" component={About}/>
+                <Route path="/home" component={Home}/>
                 </Routes>
+            
+                
+              <Home/>
+              <About/>
               </div>
             </div>
           </div>

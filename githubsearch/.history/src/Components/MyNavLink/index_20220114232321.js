@@ -16,7 +16,7 @@ export default class MyNavLink extends Component {
         //way3 tag body is also a special props
        // const{title}=this.props
         return (
-            <NavLink  className={({ isActive }) => isActive ? "list-group-item atguigu" : "list-group-item"} {...this.props} />
+            <NavLink  activeClassName="atguigu"className="list-group-item" {...this.props} />
         )
 
     }

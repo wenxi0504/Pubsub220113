@@ -25,8 +25,8 @@ export default class App extends Component {
                 Home
               </a> */}
               {/* using route to shift different components---write a route link */}
-              <MyNavLink to="/about">About</MyNavLink>
-              <MyNavLink to="/home">Home</MyNavLink>
+              <MyNavLink to="/about"></MyNavLink>
+              <MyNavLink to="/home"></MyNavLink>
             
             </div>
           </div>
@@ -38,6 +38,10 @@ export default class App extends Component {
                 <Route path="/about" element={<About/>}/>
                 <Route path="/home" element={<Home/>}/>
                 </Routes>
+            
+                
+              <Home/>
+              <About/>
               </div>
             </div>
           </div>
