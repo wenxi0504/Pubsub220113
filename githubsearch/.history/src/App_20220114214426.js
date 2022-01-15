@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import{NavLink,Route,Routes}from'react-router-dom'
+import{Link,Route,Routes}from'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Header from './components/Header'
@@ -24,8 +24,8 @@ export default class App extends Component {
                 Home
               </a> */}
               {/* using route to shift different components---write a route link */}
-              <NavLink className="list-group-item" to="/about">About</NavLink>
-              <NavLink className="list-group-item" to='/home'>Home</NavLink>
+              <Link className="list-group-item" to="/about">About</Link>
+              <Link className="list-group-item" to='/home'>Home</Link>
             
             </div>
           </div>
