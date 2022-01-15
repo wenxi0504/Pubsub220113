@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import{Link,Route,Routes}from'react-router-dom'
+import{Link,Route}from'react-router-dom'
 import Home from './Components/Home'
 import About from './Components/About'
 export default class App extends Component {
@@ -32,10 +32,9 @@ export default class App extends Component {
             <div className="panel">
               <div className="panel-body">
                 {/* Register route */}
-          <Routes>
+          
                 <Route path="/about" component={About}/>
                 <Route path="/home" component={Home}/>
-                </Routes>
             
                 
               <Home/>

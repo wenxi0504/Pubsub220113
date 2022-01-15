@@ -1,7 +1,6 @@
 import React, { Component } from "react"
-import{Link,Route,Routes}from'react-router-dom'
-import Home from './Components/Home'
-import About from './Components/About'
+import{Link,BrowserRouter, Route}from'react-router-dom'
+
 export default class App extends Component {
   render() {
     return (
@@ -22,24 +21,17 @@ export default class App extends Component {
               <a className="list-group-item active" href="./home.html">
                 Home
               </a> */}
-              {/* using route to shift different components---write a route link */}
+              {/* using route to shift different components */}
+             <BrowserRouter>
               <Link className="list-group-item" to="/about">About</Link>
               <Link className="list-group-item" to='/home'>Home</Link>
-            
+              </BrowserRouter>
             </div>
           </div>
           <div className="col-xs-6">
             <div className="panel">
               <div className="panel-body">
-                {/* Register route */}
-          <Routes>
-                <Route path="/about" component={About}/>
-                <Route path="/home" component={Home}/>
-                </Routes>
-            
-                
-              <Home/>
-              <About/>
+                <h3>?????????</h3>
               </div>
             </div>
           </div>
