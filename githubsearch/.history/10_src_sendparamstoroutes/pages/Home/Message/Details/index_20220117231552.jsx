@@ -7,7 +7,7 @@ const DetailData=[
 ]
 
 export default function Details (){
-    //const {id, title} =useParams();
+    const {id, title} =useParams();
     const findDetailsData=DetailData.find(item=>item.id===id);
    
     // receive state params

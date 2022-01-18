@@ -29,26 +29,18 @@ export default class Message extends Component {
 
                {/* pass state to route component */}
 
-              <Link to={{pathname:'/home/message/details',state:{id:msgObj.id,title:msgObj.title}}}>{msgObj.title}</Link>
+
               </li>
             );
           })}
         </ul>
         <hr/>
         {/* register route */}
-        <Routes>
         {/* receive param */}
+        <Routes>
         {/* <Route path="details/:id/:title" element={<Details/>}></Route> */}
-        
-         {/* search params no need to declare param
-         <Route path="details" element={<Details/>}></Route>  */}
-
-           {/* state params no need to declare param*/}
-           <Route path="details" element={<Details/>}></Route>
-
-
-
-
+         {/* search params no need to declare param */}
+         <Route path="details" element={<Details/>}></Route> 
         </Routes>
         
        

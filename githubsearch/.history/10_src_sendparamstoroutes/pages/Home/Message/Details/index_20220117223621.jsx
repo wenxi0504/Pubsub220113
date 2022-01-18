@@ -7,11 +7,9 @@ const DetailData=[
 ]
 
 export default function Details (){
-    //const {id, title} =useParams();
+    const {id, title} =useParams();
     const findDetailsData=DetailData.find(item=>item.id===id);
    
-    // receive state params
-    const {id,title}=this.props.location.state
         return (
             <ul>
                 <li>ID:{id}</li>
