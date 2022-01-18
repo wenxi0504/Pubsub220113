@@ -13,6 +13,7 @@ export default function Details (){
      const findDetailsData=DetailData.find(item=>item.id===id);
 
     //receive search argument
+  
     // const {search} =this.props.location;
     // const {id,title}=qs.parse(search.slice(1))
    

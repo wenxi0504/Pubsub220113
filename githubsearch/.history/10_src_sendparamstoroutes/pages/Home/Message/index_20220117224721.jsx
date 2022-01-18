@@ -35,9 +35,7 @@ export default class Message extends Component {
         {/* register route */}
         {/* receive param */}
         <Routes>
-        {/* <Route path="details/:id/:title" element={<Details/>}></Route> */}
-         {/* search params no need to declare param */}
-         <Route path="details" element={<Details/>}></Route> 
+        <Route path="details/:id/:title" element={<Details/>}></Route>
         </Routes>
         
        
