@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import{Route,Routes,Navigate} from 'react-router-dom';
-import News from "./News/index";
-import Message from "./Message/index";
-import MyNavLink from '../../components/MyNavLink/index'
+import{Route,Switch} from 'react-router-dom';
+import News from "./News";
+import Message from "./Message";
+import MyNavLink from './components/MyNavLink'
 
 export default class Home extends Component {
   render() {
@@ -12,18 +12,18 @@ export default class Home extends Component {
         <div>
           <ul className="nav nav-tabs">
             <li>
-              <MyNavLink to ="/home/news">News</MyNavLink>
+              <MyNavLink to ="home/news">News</MyNavLink>
             </li>
             <li>
-            <MyNavLink to ="/home/message">Message</MyNavLink>
+            <MyNavLink to ="home/message">Message</MyNavLink>
             </li>
           </ul>
          {/* register route */}
-         <Routes>
+         <Switch>
          <Route path="news" element={<News/>}/>
          <Route path="message" element={<Message/>}/>
-         </Routes>
-        
+         </Switch>
+           
         </div>
       </div>
     );

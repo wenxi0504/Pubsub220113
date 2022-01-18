@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import{Route,Routes,Navigate} from 'react-router-dom';
+import{Route,Routes} from 'react-router-dom';
 import News from "./News/index";
 import Message from "./Message/index";
 import MyNavLink from '../../components/MyNavLink/index'
@@ -12,18 +12,18 @@ export default class Home extends Component {
         <div>
           <ul className="nav nav-tabs">
             <li>
-              <MyNavLink to ="/home/news">News</MyNavLink>
+              <MyNavLink to ="home/news">News</MyNavLink>
             </li>
             <li>
-            <MyNavLink to ="/home/message">Message</MyNavLink>
+            <MyNavLink to ="home/message">Message</MyNavLink>
             </li>
           </ul>
          {/* register route */}
          <Routes>
-         <Route path="news" element={<News/>}/>
-         <Route path="message" element={<Message/>}/>
+         <Route path="home/news" element={<News/>}/>
+         <Route path="home/message" element={<Message/>}/>
          </Routes>
-        
+           
         </div>
       </div>
     );
