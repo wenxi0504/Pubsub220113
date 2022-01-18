@@ -19,17 +19,15 @@ export default class Message extends Component {
           {messageArr.map((msgObj) => {
             return (
               <li key={msgObj.id}>
-                {/* pass params to route component */}
-                <Link to={`/home/message/details/${msgObj.id}/${msgObj.title}`}>{msgObj.title}</Link>
+                <Link to="/home/message/details">{msgObj.title}</Link>
               </li>
             );
           })}
         </ul>
         <hr/>
         {/* register route */}
-        {/* receive param */}
         <Routes>
-        <Route path="details/:id/:title" element={<Details/>}></Route>
+        <Route path="details" element={<Details/>}></Route>
         </Routes>
         
        

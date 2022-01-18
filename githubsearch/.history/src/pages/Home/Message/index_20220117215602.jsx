@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import {Link,Route,Routes} from "react-router-dom";
 import Details from "./Details";
 
 export default class Message extends Component {
@@ -19,20 +18,13 @@ export default class Message extends Component {
           {messageArr.map((msgObj) => {
             return (
               <li key={msgObj.id}>
-                {/* pass params to route component */}
-                <Link to={`/home/message/details/${msgObj.id}/${msgObj.title}`}>{msgObj.title}</Link>
+                <a href="/message1">{msgObj.title}</a>&nbsp;&nbsp;
               </li>
             );
           })}
         </ul>
         <hr/>
-        {/* register route */}
-        {/* receive param */}
-        <Routes>
-        <Route path="details/:id/:title" element={<Details/>}></Route>
-        </Routes>
-        
-       
+        <Details/>
       </div>
     );
   }
