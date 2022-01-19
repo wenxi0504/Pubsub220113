@@ -22,8 +22,7 @@ export default class Message extends Component {
               <li key={msgObj.id}>
                 {/* pass params to route component */}
                 <Link to={`/home/message/details/${msgObj.id}/${msgObj.title}`}>{msgObj.title}</Link>
-                &nbsp;<button onClick={this.pushShow}>push check</button> 
-                &nbsp;<button onClick={this.replaceShow}>replace check</button>
+                <button>push check</button>
               </li>
             );
           })}
