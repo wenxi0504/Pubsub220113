@@ -6,12 +6,12 @@ import MyNavLink from '../../components/MyNavLink/index'
 
 export default class Home extends Component {
   
-  // componentDidMount(){
-  //   setTimeout(()=>{
-  //     this.props.history.push("/home/message")
-  //   },2000)
+  componentDidMount(){
+    setTimeout(()=>{
+      this.props.history.push("/home/message")
+    },2000)
 
-  // }
+  }
 
   render() {
     return (

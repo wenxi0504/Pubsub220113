@@ -1,18 +1,10 @@
 import React, { Component } from "react";
-import{Route,Routes,useNavigate} from 'react-router-dom';
+import{Route,Routes,Navigate} from 'react-router-dom';
 import News from "./News/index";
 import Message from "./Message/index";
 import MyNavLink from '../../components/MyNavLink/index'
 
 export default class Home extends Component {
-  
-  // componentDidMount(){
-  //   setTimeout(()=>{
-  //     this.props.history.push("/home/message")
-  //   },2000)
-
-  // }
-
   render() {
     return (
       <div>
