@@ -16,10 +16,7 @@ export default class Message extends Component {
     // replace跳转+携带params参数
     this.props.history.replace(`/home/message/detail/${id}/${title}`)
     // replace跳转+携带search参数
-    //this.props.history.replace(`/home/message/detail?id=${id}&title=${title}`)
-
-    //replace 跳转+携带state参数
-    //this.state(`/home/message/detail`,{id,title})//{id:id,title:title}
+    this.props.history.replace(`/home/message/detail?id=${id}&title=${title}`)
   
   }
 

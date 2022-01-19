@@ -12,15 +12,10 @@ export default class Message extends Component {
   }
   
   replaceShow=(id,title)=>{
-    console.log(this);
-    // replace跳转+携带params参数
-    this.props.history.replace(`/home/message/detail/${id}/${title}`)
-    // replace跳转+携带search参数
-    //this.props.history.replace(`/home/message/detail?id=${id}&title=${title}`)
 
-    //replace 跳转+携带state参数
-    //this.state(`/home/message/detail`,{id,title})//{id:id,title:title}
-  
+    this.props.history.replace(`/home/message/detail/${id}/${title}`)
+
+
   }
 
   render() {
@@ -35,7 +30,7 @@ export default class Message extends Component {
                 {/* pass params to route component */}
                 <Link to={`/home/message/details/${msgObj.id}/${msgObj.title}`}>{msgObj.title}</Link>
                 &nbsp;<button onClick={this.pushShow}>push check</button> 
-                &nbsp;<button onClick={()=>{this.replaceShow(msgObj.id,msgObj.title)}}>replace check</button>
+                &nbsp;<button onClick={this.replaceShow}>replace check</button>
               </li>
             );
           })}
