@@ -64,8 +64,6 @@ export default class Message extends Component {
         </Routes>
         <button onClick={this.back}>Go back</button>
         <button onClick={this.forward}>Go forward</button>
-        <button onClick={this.go}>Go</button>
-
       </div>
     );
   }

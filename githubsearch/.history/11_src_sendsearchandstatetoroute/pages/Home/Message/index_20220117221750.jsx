@@ -18,7 +18,6 @@ export default class Message extends Component {
         <ul>
           {messageArr.map((msgObj) => {
             return (
-              
               <li key={msgObj.id}>
                 {/* pass params to route component */}
                 <Link to={`/home/message/details/${msgObj.id}/${msgObj.title}`}>{msgObj.title}</Link>

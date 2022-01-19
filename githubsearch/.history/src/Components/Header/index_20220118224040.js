@@ -1,11 +1,6 @@
 import React, { Component } from 'react'
-import {withRouter} from 'react-router-dom'
 
-class Header extends Component {
-    back =()=>{
-
-        this.props.history.goBack()
-    }
+export default class Header extends Component {
     render() {
         console.log('The props that Header component receive is? ',this.props)
         return (
@@ -17,5 +12,3 @@ class Header extends Component {
         )
     }
 }
-
-export default withRouter(Header)
